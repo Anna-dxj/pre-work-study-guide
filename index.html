@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
   </head>
   <body>
@@ -43,6 +44,35 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
+          <h3>The Basics</h3>
+            <li>Margin indicates how much space want outisde of an element.</li>
+            <li>A padding indicates how much space we want around the content inside an element</li>
+            <li>Inline CSS: adds style elements directly in HTML file</li> 
+              <li> Pros:  Quick and permanent changes, apply to specifc HTML tags</li>
+              <li> Cons: LEss flexible than external and intaernal styles; must be edited individually when make design change</li>
+            <li>Internal style sheet: rules that only apply to that page
+              <li>Note: can configure CSS classa dn IDs to style multiple elements in page code</li>
+            <li>External style sheet: most common way to style a webpage that allows developers to keep CSS rules in a different file</li>
+              <li>Pros: Easy to make design changes</li>
+              <li>Notes: Use link in HTML head element</li>
+          <h3>CSS Rules</h3>
+            <li>div {}: selector</li>
+              <li>Selector - defines element/attributes to which rules/declarations will apply</li>
+              <li>Declarations - CSS property want to apply and value of property</li>
+            <li>margin: property that indicates how much space want outside of a given element; not visible on a page</li>
+            <li>padding: property that adds space around teh content jinside and element; makes an entire element biger ultimately</li>
+            <li>*: "special wild-card symbol" to indicate to apply rule to all elements visible on page</li>
+            <li>Combine two selectors into one CSS rule with ,</li>
+            <li>text-align: horizontal alignment of text in element</li>
+            <li>img: image properties (display, height, width, margins, etc.)</li>
+            <li>ul: affecting UL elements (padding, font-size)</li>
+            <li>p: affecting p elements (text-alignment, font-size)</li>
+            <li>.[class]: indicates what's following the period as a class sector (any HTML element assigned to that class will gain property assignments)</li>
+          <h3>Adding CSS to HTML</h3>
+            <li>Code: link rel="stylesheet" herf="./[folder]/[style sheet name]</li>
+              <li>rel: specifies the relationship between current document and linked document resource</li>
+              <li>herf: specializes location (URL) of external resource</li>
+            <li>In the prework study guide example, link it after the last meta before title elements in head element</li>
           <!--CSS notes-->>
         </ul>
       </section>
