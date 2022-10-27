@@ -17,169 +17,148 @@
       <section class="card" id="html-section">
         <h2>HTML</h2>
         <ul>
-          <h3>The Basics</h3>
-            <li> <b>Head</b>: element contains information about the webpage</li>
-            <li> <b>Body</b>: element represents the visible contrent shown to the user</li>
-            <li> Start commands with open <, end command with /></li>
-            <!--Other HTML notes-->
-          <br> </br>
-            <!--Add line breaks (br) before all h3 and before h2s-->
-          <h3>HTML Tags</h3>
-            <li><i>head/body</i>: designate as head/body elements</li>
-            <li><i>!--</i>: Comment</li>
-            <li><i>!DOCTYPE</i>: defines document type</li>
-            <li><i>title</i>: title of webpage</li>
-            <li><i>style</i>: defines CSS styles associated</li>
-            <li><i>base</i>: defines URL for page</li>
-            <li><i>links</i>: connects external resource for HTML doc</li>
-            <li><i>meta</i>: defines metadata (ex: character set, description, keywords, author, viewport, etc.)</li>
-            <li><i>script</i>: embeds client-site scripts in HTML doc</li>
-            <li><i>ul/ol/li</i>: unordered list/orderd list/ list items</li>
-              <ul>
-                <li>Note to embed a list item, add ul/ol tag inside previous ul/ol tag</li>
-              </ul>
-            <li><i>h1/2/3/4/5/6</i>: level of headding designation</li>
-            <li><i>p</i>: paragraph</li>
-            <li><i>img</i>: image</li>
-            <li><i>be</i>: line break</li>
-            <li><i>a</i>: "anchor"; creates link for same/different webpage</li>
-            <li>Text formatting:</li>
-              <ul>
-                <li><i>b</i>: bold text</li>
-                <li><i>i</i>: italicize</li>
-                <li><i>del</i>: deleted text</li>
-                <li><i>sub</i>: subscript</li>
-                <li><i>sup</i>: superscript</li>
-                </li>
-              </ul>
-            <!-- Later - add HTML commands? -->
+          <li><b>HTML</b> - language that provides basic content structure to all webpages</li>
+          <li><b>Elements</b> - types of content on a page</li>
+            <ul>
+              <li>Composed of opening and closign tags indicated by <></li>
+            </ul>
+          <li><b>Head elements</b> - contains information (metadata) that helps browser to render a page correctly</li>
+            <ul>
+              <li>Elements are not visible to user</li>
+              <li><b>Metadata</b> - data about a webpage that are typically not seen by user but contains important information about accessibility, search engines, performances</li>
+            </ul>
+          <li><b>Body elements</b> - contains content shown to the user</li>
         </ul>
         <br> </br>
       </section>
 
       <section class="card" id="css-section">
         <h2>CSS</h2>
+        <h3>The Basics</h3>
         <ul>
-          <h3>The Basics</h3>
-            <li>Margin indicates how much space want outisde of an element.</li>
-            <li>A padding indicates how much space we want around the content inside an element</li>
-            <li><b>Inline CSS</b>: adds style elements directly in HTML file</li> 
-              <ul>
-              <li> Pros:  Quick and permanent changes, apply to specifc HTML tags</li>
-              <li> Cons: Less flexible than external and intaernal styles; must be edited individually when make design change</li>
-              </ul>
-            <li><b>Internal style sheet</b>: rules that only apply to that page
-              <ul>
-              <li>Note: can configure CSS class and IDs to style multiple elements in page code</li>
-              </ul>
-            <li><b>External style sheet</b>: most common way to style a webpage that allows developers to keep CSS rules in a different file</li>
-              <ul>
-              <li>Pros: Easy to make design changes</li>
-              <li>Notes: Use link in HTML head element</li>
-              </ul>
-          <br></br>
-          <h3>CSS Rules</h3>
-            <li>div {}: selector</li>
-              <ul>
-              <li><b>Selector</b>: defines element/attributes to which rules/declarations will apply</li>
-              <li><b>Declarations</b>: CSS property want to apply and value of property</li>
-              </ul>
-            <li><i>margin</i>: property that indicates how much space want outside of a given element; not visible on a page</li>
-            <li><i>padding</i>: property that adds space around teh content jinside and element; makes an entire element biger ultimately</li>
-            <li><i>*</i>: "special wild-card symbol" to indicate to apply rule to all elements visible on page</li>
-            <li>Combine two selectors into one CSS rule with ,</li>
-            <li><i>text-align</i>: horizontal alignment of text in element</li>
-            <li><i>img</i>: image properties (display, height, width, margins, etc.)</li>
-            <li><i>ul</i>: affecting UL elements (padding, font-size)</li>
-            <li><i>p</i>: affecting p elements (text-alignment, font-size)</li>
-            <li><i>.[class]</i>: indicates what's following the period as a class sector (any HTML element assigned to that class will gain property assignments)</li>
-          <br></br>
-            <h3>Adding CSS to HTML</h3>
-            <li>Code: link rel="stylesheet" herf="./[folder]/[style sheet name]</li>
-              <li><i>rel</i>: specifies the relationship between current document and linked document resource</li>
-              <li><i>herf</i>: specializes location (URL) of external resource</li>
-            <li>In the prework study guide example, link it after the last meta before title elements in head element</li>
-          <br> </br>
-            <!--CSS notes-->
+          <li><b>CSS</b> - language that gives content style</li>
+          <li>Defines things like colors, aesthetics, visual layouts, organization, etc.</li>
+          <li><b>Inline CSS</b> - Uses style attrribute with CSS to a particular HTML element only</li>
+          <ul>
+            <li>Applies to specific HTML tags</li>
+            <li>Good for quick & permanent changes</li>
+            <li>Less flexible than others; each inline must be edited individually whenever make design change</li>
+          </ul>
+          <li><b>Internal style sheet</b> - style sheet embedded directly into HTML (use style tag in head element)</li>
+          <ul>
+            <li>Rules only apply on that page</li>
+            <li>Single changes to CSS rule will apply to all tagged page elements</li>
+          </ul>
+          <li><b>External style sheet</b> - completely different file and must be linked to HTML code in head using link tag</li>
+          <ul>
+            <li>Most common and preferred method</li>
+            <li>Allows developers to keep all CSS rules in separate file and makes changes easier</li>
+          </ul>
         </ul>
+        <br></br>
+        <h3>CSS Rules</h3>
+        <ul>
+          <li><b>Selector</b> - defines the element or attributes to which rules/declarations will apply</li>
+          <li><b>Declarations</b> - Composed of CSS proprty and its value</li>
+          <li><b>CSS Box Model</b> - concept that every HTML element is a box, which consist of margins (outside elemtnt) and element's boarders, padding, and content</li>
+          <ul>
+            <li><b>margin</b> - indicates how much space want outside elemtn; not visible to page, just buffer</li>
+            <li><b>padding</b> - adds space around content inside an element; increasing padding makes it bigger</li>
+          </ul>
+          <li>, combines two sectors into single CSS rule, such that declaration will affect both selectors</li>
+          <li>* indicates rule will be applied to all elements visible on page</li>
+        </ul>
+        <br></br>
       </section>
 
       <section class="card" id="git-section">
         <h2>Git</h2>
+        <h3>Commandline</h3>
         <ul>
-          <h3>Using the Command Line</h3>
-            <li><i>ls</i>: list of files and directories</li>
-            <li><i>cd "name"</i>: change directory to "name"</li>
-            <li><i>cd ..</i>: navigate backwards one directory at a time</li>
-            <li><i>pwd</i>: print working directory</li>
-            <li><i>mkdir "name"</i>: create new directory </li>
-            <li><i>code .</i>: open folder in VS code</li>
-          <br></br>
-          <h3>Git commands</h3>
-            <li><i>git status</i>: checks what branch currently on</li>
-            <li><i>git checkout -b "branch-name"</i>: creates new branch and switches to it</li>
-            <li><i>git add -A</i>: Adds all (-A) modification in working branch area</li>
-            <li><i>git commit -m "commit"</i>: Adds description of changes made to branch</li>
-            <li><i>git pull origin main</i>: check if local branch is in sync with base branch on GitHub</li>
-            <li><i>git push origin "branch name"</i>: push changes of "branch name" to remote Github branch</li>
-          <br></br>
-          <h3>GitHub Workflow</h3>
-            <li>Ensure GitHub repository is in sync with local drive</li>
-            <li>Default is main/master; work off of feature branches</li>
-            <li>Feature branch: make commits of changes to code</li>
-            <li>Push up changes to feautre branch in GitHubh by opening PR (pull request)</li>
-            <li>Wait for review and apprival before merging with main branch</li>
-            <!--Add Git commands-->
-          <br></br>
-          <h3>Git Version Control</h3>
-            <ol>
-              <li>git status</li>
-              <li>git add -A</li>
-              <li>git commit -m "commit"</li>
-              <li>git pull origin main</li>
-              <li>git push origin "branch name"</li>
-              <li>Compare and pull request on GitHub</li>
-            </ol>
-          <br> </br>
+          <li><i>ls</i>: list of files and directories</li>
+          <li><i>cd</i>: change working directory</li>
+          <li><i>pwd</i>: print working directory</li>
+          <li><i>cd ..</i>: go back one directory</li>
+          <li><i>mkdir</i>: creates new directory</li>
+          <li><i>touch</i>: creates new file</li>
+          <li>vs. git commands: git commands always start with "git", but are also put into command line</li>
         </ul>
+        <br></br>
+        <h3>GitHub Workflow</h3>
+        <ul>
+          <li><b>Main/master branch</b> - default work branch; shouldn't do any coding directly into main branch to keep track of changes made to it</li>
+          <li><b>Feature branches</b> - branches created to work on code directly or add anything to project; later merged with main branch</li>
+          <li><b>Pul request (PR)</b> - request used to merge a braench with main branch</li>
+          <li>Workflow:</li>
+            <ol>
+              <li>Create branch with short descriptive name (git checkout -b "branch-name")</li>
+              <li>Make desired changes to repository</li>
+              <li>Add modifications to staging area (git add -A)</li>
+              <li>Commits (git commit -m "commit")</li>
+              <li>Sync local and remote branches (git pull origin main)</li>
+              <li>Push changes made to local branch to remote branch (git push origin "branch-name")</li>
+              <li>Create pull request and address review comments</li>
+              <li>Merge pull request and delete branch</li>
+            </ol>
+        </ul>
+        <br></br>
       </section>
 
       <section class="card" id="javascript-section">
         <h2>JavaScript</h2>
+        <h3>Basics</h3>
+          <ul>
+            <li><b>JavaScript</b> - high-level dynamic programming language that handels logic and allows users to interact with a website</li>
+            <li>Reads top to bottom</li>
+            <li>Can be used to power effects, interactivity, data communications, etc.; makes webpage interactive</li>
+          </ul>
+        <h3>Variables</h3>
+          <ul>
+            <li><b>Variable</b> - named container that allows storage of data in code; assigned wtih =</li>
+            <li><b>Array</b> - single variable that is used to hold a group of data</li>
+            <ul>
+              <li>Typically used to hold data that is related in some way</li>
+              <li>Can hold different types of data (strings, numbers, etc.)</li>
+            </ul>
+            <li><b>Index</b> - the number associated with the location of a piece of data within array</li>
+              <ul>
+                <li>Can be used to access specific piece of information in array</li>
+                <li>Zero-indexed (ie. starts at 0), sequential</li>
+              </ul>
+          </ul>
+          <br></br>
+        <h3>Conditionals</h3>
         <ul>
-          <h3>Terms</h3>
-            <li><b>Variable (var)</b>: named container that allows developer to store data in code</li>
-            <li><b>Control flow</b>: order in which a computer executes code in a script</li>
-            <li><b>Array []</b>: single variable that is used to hold a group of data and is typically used to hold data that is somehow related
-            <li><b>Index</b>: Numbers associated with location of data in array; first item always 0</li>
-          <br> </br>
-          <h3>Basics</h3>
-            <li>Variable names must be unique</li>
-            <li>= assigns specific data to variable</li>
-            <li>Strings constrained by "" and are used to represnt and manipulate a sequence of characters</li>
-            <li>Link JavaScript in the Body element</li>
-            <li>Code runs from first statement at top of page down to last statement at bottom of page</li>
-          <br> </br>
-          <h3>Conditionals</h3>
-            <li><b>Truthy</b>: when a condition is true</li>
-            <li>If condition is true, will do action asked of it</li>
-            <li>If condition isn't true, computer ignores</li>
-            <li><i>else if</i>: alternate condition</li>
-          <br> </br>
-          <h3>For Loops</h3>
-            <li>Uses a predictable pattern of indicies to perform a task on all items in an array by allowing a single code block to be executed repeatedly</li>
-            <li>Uses another statement (ex: conditional) to interrupt control flow by executing a block of code for a specific number of times</li>
-            <li>Elements</li>
-             <ul>
-               <ol>
-                 <li>Starting point for loop (ex: var x = 0)</li>
-                 <li>Condition (ex: x < shapes.length)</li>
-                 <li>Array integrate over each item (ex: x++)</li>
-               </ol>
-             </ul>
-          <br> </br>
+          <li>One of teh ways to control the order in which code is executed if at all</li>
+          <li>If statement introduces decision-making into code</li>
+          <li>Code will only be executed if condition is met</li>
         </ul>
+        <h3>Loops & for loops</h3>
+        <ul>
+          <li><b>Loops</b> - way to write code that repeats without actually repeating it</li>
+          <li><b>For loops1</b> - use predictable pattern of indices to perform a task on all items in array by allowing single code block to be executed repeatedly</li>
+          <li>Use another statement (ex. conditional) to interrupt control flow by executing block of code specific number of times</li>
+          <li>Can tell computer to go through each index in array and log them to console until none are left</li>
+          <ul>
+            <li>Need index and array length (needs to know hoiw many times code will run until there are no items left in array)</li>
+          </ul>
+          <li>Parts of a loop: starting point of loop; condition; statement that allows the array to iterate over each item</li>
+        </ul>
+        <br></br>
+        <h3>Functions</h3>
+        <ul>
+          <li><b>Function</b> - a set of instructions that tells computer how to perform a certain task</li>
+          <li>Functions don't automatically execute when JavaScript file is run</li>
+          <li>Must call fu nction by name to execute it; makes it easily reusable</li>
+          <ul>
+            <li>Can call it as many times as needed</li>
+            <li>Can control where in control flow task is executed if at all</li>
+          </ul>
+          <li>Function followed by (), where define perameters</li>
+        </ul>
+        <br></br>
       </section>
+      <!--Fix h3 margins. Complete workflow-->
 
     </main>
 
